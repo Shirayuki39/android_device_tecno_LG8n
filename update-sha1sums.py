@@ -20,8 +20,8 @@ import os
 import sys
 from hashlib import sha1
 
-device = 'X6833B'
-vendor = 'infinix'
+device = 'LG8n'
+vendor = 'tecno'
 
 with open('proprietary-files.txt', 'r') as f:
     lines = f.read().splitlines()
