@@ -1,4 +1,4 @@
-## x6833b package version: X6833B-H894DEFGHI-T-GL-231102V2897, unless stated otherwise
+## lg8n package version: LG8n-H891OPAeAf-S-GL-231116V2487, unless stated otherwise
 
 # AEE
 vendor/lib/libaedv.so
