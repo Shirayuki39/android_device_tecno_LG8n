@@ -1,4 +1,4 @@
-## lg8n package version: LG8n-H891OPAeAf-S-GL-231116V2487, unless stated otherwise
+## x6833b package version: X6833B-H894DEFGHI-T-GL-231102V2897, unless stated otherwise
 
 # AEE
 vendor/lib/libaedv.so
@@ -390,23 +390,18 @@ vendor/lib64/hw/fpsensor_fingerprint.default.so
 
 # Firmware
 vendor/firmware/BT_FW.cfg
+vendor/firmware/Conf_MultipleTest.ini
 vendor/firmware/WIFI_RAM_CODE_soc2_2_1d_1.bin
 vendor/firmware/WIFI_RAM_CODE_soc2_2_1e_1.bin
 vendor/firmware/WMT_SOC.cfg
-vendor/firmware/aw8622x_haptic.bin
-vendor/firmware/aw8622x_osc_rtp_12K_10s.bin
-vendor/firmware/aw8622x_rtp.bin
 vendor/firmware/aw8624_haptic.bin
 vendor/firmware/aw8624_osc_rtp_24K_5s.bin
-vendor/firmware/aw8624_rtp.bin
 vendor/firmware/aw8624_rtp_lighthouse.bin
 vendor/firmware/aw8624_rtp_silk.bin
+vendor/firmware/aw87xxx_acf.bin
+vendor/firmware/awinic_params.bin
 vendor/firmware/fm_cust.cfg
-vendor/firmware/fs1599.fsm
-vendor/firmware/fs3001_1.bin
-vendor/firmware/fs3001_2.bin
-vendor/firmware/fs3001_haptic.bin
-vendor/firmware/fs3001_osc_rtp_12K_10s.bin
+vendor/firmware/focaltech_ts_fw_0.bin
 vendor/firmware/gt9886_cfg_6781v01.bin
 vendor/firmware/gt9886_cfg_6785v96.bin
 vendor/firmware/gt9886_cfg_6785v99.bin
@@ -468,9 +463,7 @@ vendor/firmware/gt9896s_firmware_6893v04.bin
 vendor/firmware/gt9896s_firmware_6893v05.bin
 vendor/firmware/gt9896s_firmware_6895v01.bin
 vendor/firmware/gt9896s_firmware_6983v01.bin
-vendor/firmware/ilitek_ts_fw.bin
 vendor/firmware/lib3a.ccu
-vendor/firmware/mp.ini
 vendor/firmware/mt6627_fm_v1_coeff.bin
 vendor/firmware/mt6627_fm_v1_patch.bin
 vendor/firmware/mt6630_fm_v1_coeff.bin
@@ -489,7 +482,6 @@ vendor/firmware/novatek_ts_fw.bin
 vendor/firmware/novatek_ts_fw_144.bin
 vendor/firmware/novatek_ts_fw_jdi.bin
 vendor/firmware/novatek_ts_fw_tm.bin
-vendor/firmware/novatek_ts_mp.bin
 vendor/firmware/remoteproc_scp
 vendor/firmware/soc2_2_ram_bt_1d_1_hdr.bin
 vendor/firmware/soc2_2_ram_bt_1e_1_hdr.bin
