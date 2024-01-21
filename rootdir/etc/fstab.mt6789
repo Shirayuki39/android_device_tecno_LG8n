@@ -17,12 +17,10 @@ vendor /vendor erofs ro wait,slotselect,avb,logical,first_stage_mount
 
 
 product /product erofs ro wait,slotselect,avb,logical,first_stage_mount
-product /product ext4 ro wait,slotselect,avb,logical,first_stage_mount
 
 
 
 system_ext /system_ext erofs ro wait,slotselect,avb,logical,first_stage_mount
-system_ext /system_ext ext4 ro wait,slotselect,avb,logical,first_stage_mount
 
 
 
@@ -61,7 +59,6 @@ odm_dlkm /odm_dlkm ext4 ro wait,slotselect,avb,logical,first_stage_mount
 
 
 /devices/platform/soc/11240000.mmc* auto auto defaults voldmanaged=sdcard1:auto,encryptable=userdata
-/devices/platform/soc/soc:odm/11230000.msdc* auto auto defaults voldmanaged=sdcard1:auto,encryptable=userdata
 
 
 /devices/platform/soc/mt_usb* auto vfat defaults voldmanaged=usbotg:auto,encryptable=userdata
@@ -155,3 +152,4 @@ odm_dlkm /odm_dlkm ext4 ro wait,slotselect,avb,logical,first_stage_mount
 
 
 /dev/block/by-name/tkv /tkv emmc defaults defaults
+
