@@ -268,13 +268,9 @@
         </path>
         <!-- BSP: add audio bring up XLBEYH-4 by jiaqiong.zhang 20220513 end -->
         <path name="sidetone_switch" value="turnon">
-            <kctl name="STF_CH1 ADDA_UL_CH1" value="1" />
-            <kctl name="STF_CH2 ADDA_UL_CH2" value="1" />
             <kctl name="Sidetone Filter Switch" value="1" />
         </path>
         <path name="sidetone_switch" value="turnoff">
-            <kctl name="STF_CH1 ADDA_UL_CH1" value="0" />
-            <kctl name="STF_CH2 ADDA_UL_CH2" value="0" />
             <kctl name="Sidetone Filter Switch" value="0" />
         </path>
         <!-- i2s hd control -->
@@ -1047,7 +1043,6 @@
             <kctl name="UL2_CH1 SRC_1_OUT_CH1" value="0" />
             <kctl name="UL2_CH2 SRC_1_OUT_CH2" value="0" />
         </path>
-<!-- BSP: resolve ke problem for CKNHHW2S-86 by denghang.quan 20230315 start -->
         <path name="reset_device_setting" value="setting">
             <kctl name="deep_buffer_scenario" value="0" />
             <kctl name="record_xrun_assert" value="0" />
@@ -1063,9 +1058,7 @@
             <kctl name="ADC R Mux" value="Idle" />
             <kctl name="PGA L Mux" value="None" />
             <kctl name="PGA R Mux" value="None" />
-            <kctl name="usb_call_echo_ref" value="0" />
         </path>
-<!-- BSP: resolve ke problem for CKNHHW2S-86 by denghang.quan 20230315 end -->
         <path name="MD1_TO_CAPTURE2" value="turnon">
             <kctl name="UL2_CH1 PCM_2_CAP_CH1" value="1" />
             <kctl name="UL2_CH2 PCM_2_CAP_CH1" value="1" />
@@ -1286,3 +1279,4 @@
         </path>
     </mixercontrol>
 </root>
+
