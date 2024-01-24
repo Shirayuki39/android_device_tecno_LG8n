@@ -4,6 +4,10 @@
         <name>android.hardware.radio</name>
         <version>1.0-6</version>
         <interface>
+            <name>ISap</name>
+            <instance>slot2</instance>
+        </interface>
+        <interface>
             <name>IRadio</name>
             <instance>em1</instance>
             <instance>em2</instance>
