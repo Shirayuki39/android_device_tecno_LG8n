@@ -141,14 +141,14 @@ PRODUCT_PACKAGES += \
     libhwbinder.vendor
 
 # IMS
-#PRODUCT_BOOT_JARS += \
-#    mediatek-common \
-#    mediatek-framework \
-#    mediatek-ims-base \
-#    mediatek-ims-common \
-#    mediatek-telecom-common \
-#    mediatek-telephony-base \
-#    mediatek-telephony-common
+PRODUCT_BOOT_JARS += \
+    mediatek-common \
+    mediatek-framework \
+    mediatek-ims-base \
+    mediatek-ims-common \
+    mediatek-telecom-common \
+    mediatek-telephony-base \
+    mediatek-telephony-common
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/privapp-permissions-com.mediatek.ims.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-com.mediatek.ims.xml
