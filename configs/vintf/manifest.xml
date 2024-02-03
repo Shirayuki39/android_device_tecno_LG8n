@@ -135,6 +135,11 @@
         </interface>
         <fqname>@1.2::INfc/default</fqname>
     </hal>
+        <hal format="aidl">
+        <name>android.hardware.power</name>
+        <version>2</version>
+        <fqname>IPower/default</fqname>
+    </hal>
     <hal format="hidl">
         <name>android.hardware.radio</name>
         <transport>hwbinder</transport>
