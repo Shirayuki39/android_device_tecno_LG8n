@@ -1,6 +1,5 @@
 <?xml version="1.0"?>
 <compatibility-matrix version="4.0" type="framework">
-        </hal>
     <hal format="hidl" optional="true">
         <name>android.hardware.bluetooth.audio</name>
         <transport>hwbinder</transport>
