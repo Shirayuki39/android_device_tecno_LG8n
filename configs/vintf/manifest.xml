@@ -135,7 +135,7 @@
         </interface>
         <fqname>@1.2::INfc/default</fqname>
     </hal>
-        <hal format="aidl">
+    <hal format="aidl">
         <name>android.hardware.power</name>
         <version>2</version>
         <fqname>IPower/default</fqname>

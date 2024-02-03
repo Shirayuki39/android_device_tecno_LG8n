@@ -378,6 +378,10 @@ vendor/lib64/libwvhidl.so
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
 vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 -vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml
+vendor/lib64/hw/vendor.fptool.fingerprint@2.0-impl.so
+vendor/lib64/hw/fsfingerprint.default.so
+vendor/lib64/vendor.fptool.fingerprint@2.0-adapter-helper.so
+vendor/lib64/vendor.fptool.fingerprint@2.0.so
 
 # Firmware
 vendor/firmware/BT_FW.cfg
