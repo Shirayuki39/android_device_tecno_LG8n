@@ -200,7 +200,7 @@ WIFI_DRIVER_STATE_OFF := 0
 WIFI_HIDL_UNIFIED_SUPPLICANT_SERVICE_RC_ENTRY := true
 
 # Workaround to make lineage's soong generator work
-TARGET_KERNEL_SOURCE := $(KERNEL_PATH)/kernel-headers
+TARGET_KERNEL_SOURCE := device/transsion/mt6789-headers
 
 # Inherit the proprietary files
 include vendor/tecno/LG8n/BoardConfigVendor.mk
