@@ -115,6 +115,10 @@ vendor/lib64/libaurisysdemo.so
 vendor/lib64/libbessound_hd_mtk_vendor.so
 vendor/lib64/libblisrc32_vendor.so
 vendor/lib64/libbwc.so
+vendor/lib64/libcvsd_mtk.so
+vendor/lib64/libladder.so
+vendor/lib64/libmsbc_mtk.so
+vendor/lib64/libmtklimiter_vendor.so
 vendor/lib64/libmtkshifter_vendor.so
 vendor/lib64/libmtktinyxml.so
 vendor/lib64/librt_extamp_intf.so
@@ -297,10 +301,10 @@ vendor/lib64/libbluetoothem_mtk.so
 vendor/lib64/libbt-vendor.so
 
 # Bluetooth (A2DP)
-vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so
 vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so
 vendor/lib/libbluetooth_audio_session_mediatek.so
-vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so
+vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.1.so
+vendor/lib/vendor.mediatek.hardware.bluetooth.audio@2.2.so
 vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so
 vendor/lib64/libbluetooth_audio_session_mediatek.so
 
@@ -1384,6 +1388,9 @@ vendor/lib/hw/mt6789/vulkan.mali.so:vendor/lib/hw/vulkan.mali.so
 vendor/lib/libDefaultFpsActor.so
 vendor/lib/libFrameRecord.so
 vendor/lib/libNoFpsActor.so
+vendor/lib/libaal_cust.so
+vendor/lib/libaal_key.so
+vendor/lib/libaal_mtk.so
 vendor/lib/libged.so
 vendor/lib/libgpu_aux.so
 vendor/lib/libgpud.so
@@ -1392,6 +1399,7 @@ vendor/lib/libgralloc_metadata.so
 vendor/lib/libgralloctypes_mtk.so
 vendor/lib/libion_mtk.so
 vendor/lib/libion_ulit.so
+vendor/lib/libladder.so
 vendor/lib/libmml.so
 vendor/lib/libnpagent.so
 vendor/lib/libpqframework.so
@@ -1447,6 +1455,7 @@ vendor/lib64/libgralloc_metadata.so
 vendor/lib64/libgralloctypes_mtk.so
 vendor/lib64/libion_mtk.so
 vendor/lib64/libion_ulit.so
+vendor/lib64/libladder.so
 vendor/lib64/libmml.so
 vendor/lib64/libnpagent.so
 vendor/lib64/libnpagent_server.so
@@ -1530,55 +1539,105 @@ vendor/lib64/mediadrm/libdrmclearkeyplugin.so
 vendor/lib64/mediadrm/libmockdrmcryptoplugin.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 vendor/lib64/liboemcrypto.so
+vendor/lib64/libtlcWidevineModularDrm.so
+vendor/lib64/liburee_meta_drmkeyinstall.so
 vendor/lib64/libwvhidl.so
 vendor/lib64/mediadrm/libwvdrmengine.so
 
 # NFC
-vendor/bin/STFlashTool
-vendor/bin/hw/android.hardware.nfc@1.2-service-st
-vendor/bin/nfcstackp-vendor
-vendor/etc/init/android.hardware.nfc@1.2-service-st.rc
-vendor/etc/libnfc-hal-st.conf
-vendor/etc/libnfc-nci.conf
-vendor/etc/st21nfc_conf.txt
-vendor/lib64/nfc_nci.st21nfc.st.so
+vendor/bin/hw/android.hardware.nfc@1.2-service
+vendor/etc/init/android.hardware.nfc@1.2-service.rc
+vendor/etc/init/init.nxp.nfc.rc
+vendor/lib/hw/android.hardware.nfc@1.0-impl.so
+vendor/lib/libnxp_extamp_intf.so
+vendor/lib64/hw/android.hardware.nfc@1.0-impl.so
+vendor/lib64/ese_client.so
+vendor/lib64/ese_spi_nxp.so
+vendor/lib64/hal_libnfc.so
+vendor/lib64/libnxp_extamp_intf.so
+vendor/lib64/libpn557_fw.so
+vendor/lib64/nfc_nci_nxp.so
+vendor/lib64/vendor.nxp.eventprocessor@1.0.so
+vendor/lib64/vendor.nxp.nxpese@1.0.so
+vendor/lib64/vendor.nxp.nxpnfc@2.0.so
+vendor/lib64/vendor.nxp.nxpnfclegacy@1.0.so
 
-# Factory
--app/DebugLoggerUI/DebugLoggerUI.apk
--priv-app/EngineerMode/EngineerMode.apk
--priv-app/PriFactoryTest/PriFactoryTest.apk
-priv-app/PriFactoryTest/lib/arm64/libserial_port_app.so:lib64/libserial_port_app.so
-lib64/libem_aoltest_jni.so
-lib64/libem_audio_jni.so
-lib64/libem_support_jni.so
-lib64/libem_usb_jni.so
-lib64/libem_wifi_jni.so
-
-# MDlogger
-system_ext/bin/emdlogger1
-system_ext/bin/emdlogger2
-system_ext/bin/emdlogger3
-system_ext/bin/emdlogger5
-system_ext/bin/mdlogger
-system_ext/etc/init/emdlogger1.rc
-system_ext/etc/init/emdlogger2.rc
-system_ext/etc/init/emdlogger3.rc
-system_ext/etc/init/emdlogger5.rc
-system_ext/etc/init/mdlogger.rc
-lib/libmemoryDumpEncoder.so
-lib64/libmemoryDumpEncoder.so
-lib64/libccci_util_sys.so
 
 # Firmware
-vendor/etc/MNL_Config.xml
-vendor/etc/default_pd_calibration.bin
 vendor/firmware/BT_FW.cfg
+vendor/firmware/Conf_MultipleTest.ini
 vendor/firmware/WIFI_RAM_CODE_soc2_2_1d_1.bin
 vendor/firmware/WIFI_RAM_CODE_soc2_2_1e_1.bin
 vendor/firmware/WMT_SOC.cfg
-vendor/firmware/aw883xx_acf.bin
+vendor/firmware/aw8624_haptic.bin
+vendor/firmware/aw8624_osc_rtp_24K_5s.bin
+vendor/firmware/aw8624_rtp_lighthouse.bin
+vendor/firmware/aw8624_rtp_silk.bin
+vendor/firmware/aw87xxx_acf.bin
 vendor/firmware/awinic_params.bin
 vendor/firmware/fm_cust.cfg
+vendor/firmware/focaltech_ts_fw_0.bin
+vendor/firmware/gt9886_cfg_6781v01.bin
+vendor/firmware/gt9886_cfg_6785v96.bin
+vendor/firmware/gt9886_cfg_6785v99.bin
+vendor/firmware/gt9886_cfg_6853v01.bin
+vendor/firmware/gt9886_cfg_6873v01.bin
+vendor/firmware/gt9886_cfg_6877v01.bin
+vendor/firmware/gt9886_cfg_6885v01.bin
+vendor/firmware/gt9886_cfg_6885v1.bin
+vendor/firmware/gt9886_cfg_6885v9c.bin
+vendor/firmware/gt9886_cfg_6893v01.bin
+vendor/firmware/gt9886_cfg_90hz6785.bin
+vendor/firmware/gt9886_cfg_90hz6877.bin
+vendor/firmware/gt9886_cfg_90hz6885.bin
+vendor/firmware/gt9886_cfg_gt9885v1.bin
+vendor/firmware/gt9886_firmware_6781v01.bin
+vendor/firmware/gt9886_firmware_6785a4.bin
+vendor/firmware/gt9886_firmware_6785ae.bin
+vendor/firmware/gt9886_firmware_6853v01.bin
+vendor/firmware/gt9886_firmware_6873v01.bin
+vendor/firmware/gt9886_firmware_6877af.bin
+vendor/firmware/gt9886_firmware_6877v01.bin
+vendor/firmware/gt9886_firmware_6885a1.bin
+vendor/firmware/gt9886_firmware_6885af.bin
+vendor/firmware/gt9886_firmware_6885b0.bin
+vendor/firmware/gt9886_firmware_6885b1.bin
+vendor/firmware/gt9886_firmware_6885v01.bin
+vendor/firmware/gt9886_firmware_6893v01.bin
+vendor/firmware/gt9896s_cfg_6781v01_1080x2280.bin
+vendor/firmware/gt9896s_cfg_6781v01_1080x2300.bin
+vendor/firmware/gt9896s_cfg_6789v01.bin
+vendor/firmware/gt9896s_cfg_6833v01.bin
+vendor/firmware/gt9896s_cfg_6853v01.bin
+vendor/firmware/gt9896s_cfg_6855v01.bin
+vendor/firmware/gt9896s_cfg_6873v01.bin
+vendor/firmware/gt9896s_cfg_6877v01_1080x2280.bin
+vendor/firmware/gt9896s_cfg_6877v01_1080x2300.bin
+vendor/firmware/gt9896s_cfg_6879v01.bin
+vendor/firmware/gt9896s_cfg_6893v01.bin
+vendor/firmware/gt9896s_cfg_6893v02.bin
+vendor/firmware/gt9896s_cfg_6893v03.bin
+vendor/firmware/gt9896s_cfg_6893v04.bin
+vendor/firmware/gt9896s_cfg_6893v05.bin
+vendor/firmware/gt9896s_cfg_6895v01.bin
+vendor/firmware/gt9896s_cfg_6983v01.bin
+vendor/firmware/gt9896s_firmware_6781v01_1080x2280.bin
+vendor/firmware/gt9896s_firmware_6781v01_1080x2300.bin
+vendor/firmware/gt9896s_firmware_6789v01.bin
+vendor/firmware/gt9896s_firmware_6833v01.bin
+vendor/firmware/gt9896s_firmware_6853v01.bin
+vendor/firmware/gt9896s_firmware_6855v01.bin
+vendor/firmware/gt9896s_firmware_6873v00.bin
+vendor/firmware/gt9896s_firmware_6877v01_1080x2280.bin
+vendor/firmware/gt9896s_firmware_6877v01_1080x2300.bin
+vendor/firmware/gt9896s_firmware_6879v01.bin
+vendor/firmware/gt9896s_firmware_6893v01.bin
+vendor/firmware/gt9896s_firmware_6893v02.bin
+vendor/firmware/gt9896s_firmware_6893v03.bin
+vendor/firmware/gt9896s_firmware_6893v04.bin
+vendor/firmware/gt9896s_firmware_6893v05.bin
+vendor/firmware/gt9896s_firmware_6895v01.bin
+vendor/firmware/gt9896s_firmware_6983v01.bin
 vendor/firmware/lib3a.ccu
 vendor/firmware/mt6627_fm_v1_coeff.bin
 vendor/firmware/mt6627_fm_v1_patch.bin
@@ -1594,6 +1653,10 @@ vendor/firmware/mt6632_fm_v1_coeff.bin
 vendor/firmware/mt6632_fm_v1_patch.bin
 vendor/firmware/mt6635_fm_v1_coeff.bin
 vendor/firmware/mt6635_fm_v1_patch.bin
+vendor/firmware/novatek_ts_fw.bin
+vendor/firmware/novatek_ts_fw_144.bin
+vendor/firmware/novatek_ts_fw_jdi.bin
+vendor/firmware/novatek_ts_fw_tm.bin
 vendor/firmware/remoteproc_scp
 vendor/firmware/soc2_2_ram_bt_1d_1_hdr.bin
 vendor/firmware/soc2_2_ram_bt_1e_1_hdr.bin
@@ -1603,8 +1666,15 @@ vendor/firmware/soc2_2_ram_wifi_1d_1_hdr.bin
 vendor/firmware/soc2_2_ram_wifi_1e_1_hdr.bin
 vendor/firmware/soc_fm_v1_coeff.bin
 vendor/firmware/soc_fm_v1_patch.bin
-vendor/firmware/st21nfc_fw7.bin
 vendor/firmware/wifi.cfg
+
+# Fuelgauge
+vendor/bin/fuelgauged
+vendor/bin/fuelgauged_nvram
+vendor/etc/init/fuelgauged_init.rc
+vendor/etc/init/fuelgauged_nvram_init.rc
+vendor/lib/libfgauge_gm30.so
+vendor/lib64/libfgauge_gm30.so
 
 # Fingerprint
 vendor/bin/hw/android.hardware.biometrics.fingerprint@2.1-service
@@ -1612,15 +1682,14 @@ vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc
 vendor/etc/vintf/manifest/android.hardware.biometrics.fingerprint@2.1-service.xml
 
 # Gatekeeper
-vendor/lib/hw/gatekeeper.beanpod.so
-vendor/lib/hw/libSoftGatekeeper.so
-vendor/lib/libimsg_log.so
-vendor/lib64/hw/gatekeeper.beanpod.so
-vendor/lib64/hw/libSoftGatekeeper.so
-vendor/lib64/libimsg_log.so
+vendor/lib/hw/libMcGatekeeper.so
+vendor/lib/libMcClient.so
+vendor/lib64/hw/libMcGatekeeper.so
+vendor/lib64/libMcClient.so
 
 # GNSS
 vendor/bin/hw/android.hardware.gnss-service.mediatek
+vendor/bin/mnld
 vendor/bin/mtk_agpsd
 vendor/etc/gnss/agps_profiles_conf2.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_ATnT_Mexico.xml
@@ -1635,6 +1704,7 @@ vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_T-Mobile_US.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM1.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Test_SIM2.xml
 vendor/etc/gnss/carrier/agps_profiles_conf2_carrier_Verizon_Wireless.xml
+vendor/etc/gnss/agps_profiles_conf2.xml
 vendor/etc/init/android.hardware.gnss-service.mediatek.rc
 vendor/etc/init/init.gps_drv.rc
 vendor/etc/init/init.gps_pwr.rc
@@ -1909,33 +1979,19 @@ vendor/lib64/vendor.mediatek.hardware.mmagent@1.1.so
 vendor/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
 # Keymaster
-vendor/bin/bp_kmsetkey_ca
-vendor/bin/hw/android.hardware.security.keymint@1.0-service.beanpod
 vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service
-vendor/bin/teei_daemon
-vendor/etc/init/android.hardware.security.keymint-service.beanpod.rc
-vendor/etc/init/microtrust.bp_kmsetkey_ca.rc
-vendor/etc/init/microtrust.rc
+vendor/bin/kmsetkey_ca.trustonic
+vendor/etc/init/trustonic.mc_kmsetkey_ca.rc
 vendor/etc/init/vendor.mediatek.hardware.keymaster_attestation@1.1-service.rc
-vendor/etc/vintf/manifest/android.hardware.security.keymint-service.beanpod.xml
-vendor/etc/vintf/manifest/android.hardware.security.secureclock-service.beanpod.xml
-vendor/etc/vintf/manifest/android.hardware.security.sharedsecret-service.beanpod.xml
-vendor/lib/hw/kmsetkey.beanpod.so
+vendor/lib/hw/kmsetkey.trustonic.so
 vendor/lib/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
 vendor/lib/libdecrypt.so
-vendor/lib/libgz_gp_client.so
-vendor/lib/libgz_uree.so
-vendor/lib/libteei_daemon_vfs.so
 vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.0.so
 vendor/lib/vendor.mediatek.hardware.keymaster_attestation@1.1.so
-vendor/lib64/hw/kmsetkey.beanpod.so
+vendor/lib64/hw/kmsetkey.trustonic.so
 vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so
-vendor/lib64/libTEECommon.so
 vendor/lib64/libdecrypt.so
-vendor/lib64/libgz_gp_client.so
-vendor/lib64/libgz_uree.so
 vendor/lib64/libkmsetkey.so
-vendor/lib64/libteei_daemon_vfs.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.0.so
 vendor/lib64/vendor.mediatek.hardware.keymaster_attestation@1.1.so
 
@@ -2110,6 +2166,7 @@ vendor/lib/libstorage_otp.so
 vendor/lib/vendor.mediatek.hardware.nvram@1.0.so
 vendor/lib/vendor.mediatek.hardware.nvram@1.1.so
 vendor/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so
+vendor/lib64/libconnfem.so
 vendor/lib64/libcustom_nvram.so
 vendor/lib64/libfile_op.so
 vendor/lib64/libnvram.so
@@ -2365,14 +2422,47 @@ vendor/etc/init/memtrack-mediatek.rc
 vendor/etc/vintf/manifest/memtrack-mediatek.xml
 
 # TEE
-vendor/thh/ta/0102030405060708090a0b0c0d0e0f10.ta
-vendor/thh/ta/04190000000000000000000000000000.ta
-vendor/thh/ta/8b22aba81ef0ccbfd9f5f4b634127e15.ta
-vendor/thh/ta/93feffccd8ca11e796c7c7a21acb4932.ta
-vendor/thh/ta/c09c9c5daa504b78b0e46eda61556c3a.ta
-vendor/thh/ta/c1882f2d885e4e13a8c8e2622461b2fa.ta
-vendor/thh/ta/d91f322ad5a441d5955110eda3272fc0.ta
-vendor/thh/ta/isee_model.json|086bcb644a42ad345dcd52732a62c932c07bec2a
+vendor/app/mcRegistry/020f0000000000000000000000000000.drbin
+vendor/app/mcRegistry/020f0000000000000000000000000000.tlbin
+vendor/app/mcRegistry/030c0000000000000000000000000000.drbin
+vendor/app/mcRegistry/030c0000000000000000000000000000.tlbin
+vendor/app/mcRegistry/04010000000000000000000000000000.tabin
+vendor/app/mcRegistry/05120000000000000000000000000001.drbin
+vendor/app/mcRegistry/05120000000000000000000000000001.tlbin
+vendor/app/mcRegistry/06090000000000000000000000000000.drbin
+vendor/app/mcRegistry/06090000000000000000000000000000.tlbin
+vendor/app/mcRegistry/0706000000000000000000000000004d.tlbin
+vendor/app/mcRegistry/07061000000000000000000000000000.tlbin
+vendor/app/mcRegistry/07090000000000000000000000000000.drbin
+vendor/app/mcRegistry/07170000000000000000000000000000.drbin
+vendor/app/mcRegistry/07170000000000000000000000000000.tlbin
+vendor/app/mcRegistry/08030000000000000000000000000000.tabin
+vendor/app/mcRegistry/08040000000000000000000000003419.tabin
+vendor/app/mcRegistry/08050000000000000000000000003419.drbin
+vendor/app/mcRegistry/08050000000000000000000000003419.tlbin
+vendor/app/mcRegistry/08110000000000000000000000000000.tabin
+vendor/app/mcRegistry/40188311faf343488db888ad39496f9a.drbin
+vendor/app/mcRegistry/40188311faf343488db888ad39496f9a.tlbin
+vendor/app/mcRegistry/5020170115e016302017012521300000.drbin
+vendor/app/mcRegistry/5020170115e016302017012521300000.tlbin
+vendor/app/mcRegistry/abcd270ea5c44c58bcd3384a2fa2539e.tabin
+vendor/app/mcRegistry/ce4550edbcb1662566b006ebcb303050.tabin
+vendor/app/mcRegistry/df1edda8627911e980ae507b9d9a7e7d.tabin
+vendor/app/mcRegistry/e97c270ea5c44c58bcd3384a2fa2539e.tabin
+vendor/bin/hw/vendor.trustonic.tee@1.1-service
+vendor/bin/mcDriverDaemon
+vendor/etc/init/tee.rc
+vendor/etc/init/trustonic.rc
+vendor/etc/init/vendor.trustonic.tee@1.1-service.rc
+vendor/lib/libTEECommon.so
+vendor/lib/libgz_gp_client.so
+vendor/lib/libgz_uree.so
+vendor/lib64/libTEECommon.so
+vendor/lib64/libgz_gp_client.so
+vendor/lib64/libgz_uree.so
+vendor/lib64/vendor.trustonic.tee.tui@1.0.so
+vendor/lib64/vendor.trustonic.tee@1.0.so
+vendor/lib64/vendor.trustonic.tee@1.1.so
 
 # WiFi
 vendor/bin/hw/hostapd
