@@ -5,7 +5,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/lineage_LG8n.mk
+    $(LOCAL_DIR)/bliss_LG8n.mk
 
 COMMON_LUNCH_CHOICES := \
     bliss_LG8n
